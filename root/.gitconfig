@@ -1,0 +1,6 @@
+[user]
+	name = Maximo Martinez Soria
+	email = maximo.martinezsoria@gmail.com
+
+[alias]
+	tree = log --all --graph --decorate --oneline
