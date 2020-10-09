@@ -38,3 +38,7 @@ pip3 install ansible==2.8.8
 brew install nginx php@7.2 mariadb composer
 composer global require laravel/valet
 valet install
+
+# Install Fira Code
+brew tap homebrew/cask-fonts
+brew cask install font-fira-code

@@ -29,8 +29,7 @@ set cmdheight=2
 call plug#begin('~/.vim/plugged')
 
 " Themes
-" Plug 'morhetz/gruvbox'
-Plug 'sainnhe/gruvbox-material'
+Plug 'hzchirs/vim-material'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
@@ -51,16 +50,17 @@ Plug 'git@github.com:shmargum/vim-sass-colors.git'
 
 call plug#end()
 
+" Theme configuration
+
+set background=dark
+colorscheme vim-material
+let g:airline_theme = 'vim-material'
+
+" IDE configuration
+
 if has('termguicolors')
   set termguicolors
 endif
-
-set background=dark
-
-let g:gruvbox_material_background = 'hard'
-let g:airline_theme = 'gruvbox_material'
-
-colorscheme gruvbox-material
 
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 let NERDTreeQuitOnOpen=1
