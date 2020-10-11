@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# Install Brew
-curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh
 brew update
 
 # Install zsh and oh-my-zsh
@@ -15,8 +13,7 @@ cp mms.zsh-theme ~/.oh-my-zsh/themes
 brew install vim nvim
 cp -r nvim/ ~/.config/nvim
 
-# Install git and github cli
-brew install git
+# Install github cli
 brew install gh
 
 # Copy config files
