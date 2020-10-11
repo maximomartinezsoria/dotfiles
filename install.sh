@@ -8,7 +8,7 @@ chsh -s /usr/local/bin/zsh
 compaudit | xargs chmod g-w,o-w
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-cp mms.zsh-theme ~/.oh-my-zsh/themes
+cp ./oh-my-zsh/mms.zsh-theme ~/.oh-my-zsh/themes
 
 # Install vim and nvim
 brew install vim nvim
