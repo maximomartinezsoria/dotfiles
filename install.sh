@@ -35,7 +35,14 @@ brew install python
 pip3 install ansible==2.8.8
 
 # Install server stuff
-brew install nginx php@7.2 mariadb composer
+brew install nginx php mariadb composer
+
+# Start services
+brew link php --force
+brew services start mariadb
+brew services start nginx
+
+# Install valet
 composer global require laravel/valet
 valet install
 
