@@ -5,6 +5,7 @@ brew update
 # Install zsh and oh-my-zsh
 brew install zsh
 chsh -s /usr/local/bin/zsh
+compaudit | xargs chmod g-w,o-w
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cp mms.zsh-theme ~/.oh-my-zsh/themes
