@@ -14,7 +14,7 @@ cp mms.zsh-theme ~/.oh-my-zsh/themes
 brew install vim nvim
 cp -r nvim/ ~/.config/nvim
 
-# Install github cli
+# Update git and install github cli
 brew install git
 brew install gh
 
