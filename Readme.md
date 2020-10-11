@@ -22,7 +22,7 @@ The previous command will automatically install and configure the following stuf
  - Homebrew
  - zsh and oh-my-zsh
  - vim and nvim
- - github-cli
+ - git and github-cli
  - NVM, node, npm and yarn
  - python
  - ansible
