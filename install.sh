@@ -1,21 +1,20 @@
 #!/usr/bin/env bash
 
-# Install Brew
-curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh
 brew update
 
 # Install zsh and oh-my-zsh
 brew install zsh
 chsh -s /usr/local/bin/zsh
+compaudit | xargs chmod g-w,o-w
 
-curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
-cp mms.zsh-theme ~/.oh-my-zsh/themes
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+cp ./oh-my-zsh/mms.zsh-theme ~/.oh-my-zsh/themes
 
 # Install vim and nvim
 brew install vim nvim
 cp -r nvim/ ~/.config/nvim
 
-# Install git and github cli
+# Update git and install github cli
 brew install git
 brew install gh
 
@@ -24,6 +23,8 @@ cp -r ./root/ ~/
 
 # Install NVM, node, npm and yarn
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 nvm install 12
 nvm use 12
 brew install yarn
