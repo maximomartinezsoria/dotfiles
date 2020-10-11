@@ -12,7 +12,6 @@ These are my personal configurations. If you want to give them a try, I encourag
 ```
 2. Clone this repository.
 3. Run the command.
-```
 ```bash
 sh ./install.sh
 ```
