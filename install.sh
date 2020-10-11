@@ -6,7 +6,7 @@ brew update
 brew install zsh
 chsh -s /usr/local/bin/zsh
 
-curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cp mms.zsh-theme ~/.oh-my-zsh/themes
 
 # Install vim and nvim
@@ -14,6 +14,7 @@ brew install vim nvim
 cp -r nvim/ ~/.config/nvim
 
 # Install github cli
+brew install git
 brew install gh
 
 # Copy config files
