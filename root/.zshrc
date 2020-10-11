@@ -1,7 +1,7 @@
 export PATH=$PATH:~/.composer/vendor/bin
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/user/.oh-my-zsh"
+export ZSH="/Users/$(id -un)/.oh-my-zsh"
 
 ZSH_THEME="mms"
 
@@ -12,6 +12,7 @@ ZSH_THEME="mms"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git node npm github zsh-syntax-highlighting zsh-autosuggestions)
 
+ZSH_DISABLE_COMPFIX="true"
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -23,7 +24,7 @@ export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
 
-export NVM_DIR="/Users/user/.nvm"
+export NVM_DIR="/Users/$(id -un)/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 
