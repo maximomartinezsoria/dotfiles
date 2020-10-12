@@ -2,6 +2,9 @@
 
 brew update
 
+# Allow keep a key pressed on mac
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
 # Install zsh and oh-my-zsh
 brew install zsh
 chsh -s /usr/local/bin/zsh
