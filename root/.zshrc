@@ -34,4 +34,3 @@ source ~/helpers.sh
 # Aliases
 alias vim='nvim' 
 alias touch='ttouch'
-

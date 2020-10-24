@@ -45,8 +45,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ianks/vim-tsx'
 Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript'
-Plug 'git@github.com:kien/ctrlp.vim.git'
-Plug 'git@github.com:shmargum/vim-sass-colors.git'
+Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
 
 call plug#end()
 
@@ -62,7 +61,7 @@ if has('termguicolors')
   set termguicolors
 endif
 
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 let NERDTreeQuitOnOpen=1
 
 let mapleader=" "
