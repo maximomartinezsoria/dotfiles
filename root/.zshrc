@@ -33,4 +33,4 @@ source ~/helpers.sh
 
 # Aliases
 alias vim='nvim' 
-alias touch='ttouch'
+alias touch='create_file_and_folder'
