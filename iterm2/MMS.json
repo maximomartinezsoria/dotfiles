@@ -1,5 +1,5 @@
 {
-  "Working Directory" : "\/Users\/user\/Code",
+  "Working Directory" : "\/Users\/maximomartinezsoria\/Code",
   "Prompt Before Closing 2" : false,
   "Selected Text Color" : {
     "Green Component" : 0.92142927646636963,
@@ -54,7 +54,7 @@
     "Green Component" : 0.9268307089805603
   },
   "BM Growl" : true,
-  "AWDS Window Directory" : "\/Users\/User\/Code",
+  "AWDS Window Directory" : "\/Users\/maximomartinezsoria\/Code",
   "Icon" : 1,
   "Ansi 3 Color" : {
     "Green Component" : 0.81672251224517822,
@@ -121,9 +121,19 @@
       "Text" : "[1;2A",
       "Action" : 10
     },
+    "0x63-0x40000-0x8" : {
+      "Label" : "",
+      "Action" : 12,
+      "Text" : "code . \\n"
+    },
     "0xf701-0x280000" : {
       "Text" : "0x1b 0x1b 0x5b 0x42",
       "Action" : 11
+    },
+    "0x76-0x40000-0x9" : {
+      "Label" : "",
+      "Action" : 12,
+      "Text" : "vim . \\n"
     },
     "0x38-0x40000" : {
       "Text" : "0x7f",
@@ -318,7 +328,7 @@
   "AWDS Pane Directory" : "",
   "Blur" : false,
   "Vertical Spacing" : 1,
-  "Normal Font" : "FiraCodeNerdFontComplete-Regular 14",
+  "Normal Font" : "FiraCode-Regular 15",
   "Ansi 7 Color" : {
     "Green Component" : 0.99997437000274658,
     "Red Component" : 1,
@@ -351,7 +361,7 @@
   },
   "Screen" : -1,
   "AWDS Window Option" : "Yes",
-  "Non Ascii Font" : "FiraCodeNerdFontComplete-Regular 12",
+  "Non Ascii Font" : "Menlo-Regular 11",
   "Ansi 13 Color" : {
     "Green Component" : 0.40164706110954285,
     "Red Component" : 0.9887651801109314,
