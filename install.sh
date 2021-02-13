@@ -62,4 +62,5 @@ composer global require laravel/valet
 valet install
 
 # Install Fira Code
+brew tap homebrew/cask-fonts
 brew install font-fira-code
