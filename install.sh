@@ -18,7 +18,7 @@ cp ./oh-my-zsh/mms.zsh-theme ~/.oh-my-zsh/themes
 
 # Install zsh plugins
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestionsgit
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 # Install vim and nvim
 brew install vim nvim
