@@ -28,6 +28,9 @@ cp -r nvim/ ~/.config/nvim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
+# Install vim extensions
+vim +'PlugInstall --sync' +qa
+
 # Update git and install github cli
 brew install git
 brew install gh
@@ -59,6 +62,7 @@ brew services start nginx
 
 # Install valet
 composer global require laravel/valet
+source ~/.zshrc # Need to refresh for valet to exist in PATH
 valet install
 
 # Install Fira Code
