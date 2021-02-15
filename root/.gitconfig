@@ -4,3 +4,9 @@
 
 [alias]
 	tree = log --all --graph --decorate --oneline
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
+[core]
+	editor = vim
