@@ -4,3 +4,9 @@
 
 [alias]
 	tree = log --all --graph --decorate --oneline
+
+[init]
+	defaultBranch = main
+
+[core]
+	editor = nvim
