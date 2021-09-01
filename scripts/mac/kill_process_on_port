@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+port="${1}"
+pid=$(lsof -i -w -n :$port| awk '{print $2}'|awk 'END{print}')
+kill -9 $pid
