@@ -16,8 +16,10 @@ alias gc="git commit"
 alias gp="git push"
 alias gl="git pull"
 alias gst="git status"
+alias gss="git stash"
 alias gco="git checkout"
 alias gb="git branch"
+alias gd="git diff"
 
 # Docker
 alias d="docker"
