@@ -20,6 +20,7 @@ alias gss="git stash"
 alias gco="git checkout"
 alias gb="git branch"
 alias gd="git diff"
+alias gm="git merge"
 
 # Docker
 alias d="docker"
