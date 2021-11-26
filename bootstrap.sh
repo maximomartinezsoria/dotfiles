@@ -7,6 +7,7 @@ install_brew_apps
 
 set_zsh_default_shell
 
+install_zim
 install_nvm
 install_valet
 

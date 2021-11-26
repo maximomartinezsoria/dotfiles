@@ -8,6 +8,10 @@ function install_brew_apps() {
   brew bundle --file="$DOTFILES_PATH/mac/Homebrew/Brewfile" --force
 }
 
+function install_zim () {
+  curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
+}
+
 function set_zsh_default_shell() {
   chsh -s /usr/local/bin/zsh
   compaudit | xargs chmod g-w,o-w
