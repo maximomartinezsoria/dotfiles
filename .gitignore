@@ -1,3 +1,5 @@
 .DS_Store
 mac/karabiner/automatic_backups
+mac/karabiner/karabiner
 .idea
+/mac/Homebrew/Brewfile.lock.json
