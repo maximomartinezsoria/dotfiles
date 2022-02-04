@@ -21,6 +21,9 @@ alias gco="git checkout"
 alias gb="git branch"
 alias gd="git diff"
 alias gm="git merge"
+alias gg="git log"
+alias ggo="git log --oneline"
+alias gt="git tree"
 
 # Docker
 alias d="docker"
