@@ -1,12 +1,20 @@
-ln -s "$DOTFILES_PATH/shell/zsh/.zshrc" "$HOME/.zshrc"
-ln -s "$DOTFILES_PATH/shell/zsh/.zimrc" "$HOME/.zimrc"
-ln -s "$DOTFILES_PATH/shell/zsh/.zlogin" "$HOME/.zlogin"
-ln -s "$DOTFILES_PATH/shell/zsh/.zshenv" "$HOME/.zshenv"
+#!/usr/bin/env bash
 
-ln -s "$DOTFILES_PATH/editors/nvim/init.vim" "$HOME/.config/nvim/init.vim"
-ln -s "$DOTFILES_PATH/editors/vim/.vimrc" "$HOME/.vimrc"
+# Self-locate the repo if not invoked via bootstrap, so running this standalone
+# can never produce broken "/foo" links from an empty $DOTFILES_PATH.
+: "${DOTFILES_PATH:=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)}"
 
-ln -s "$DOTFILES_PATH/git/.gitconfig" "$HOME/.gitconfig"
+# link <path-in-repo> <destination>
+# -sfn = symbolic, force-replace, and never descend into an existing dir symlink
+link() {
+  mkdir -p "$(dirname "$2")"
+  ln -sfn "$DOTFILES_PATH/$1" "$2"
+}
 
-ln -s "$DOTFILES_PATH/mac/karabiner" "$HOME/.config/karabiner"
-ln -s "$DOTFILES_PATH/languages/php/valet/Drivers/TrellisValetDriver.php" "$HOME/.config/valet/Drivers/TrellisValetDriver.php"
+link editors/nvim           "$HOME/.config/nvim"
+link editors/vim/.vimrc     "$HOME/.vimrc"
+link git/.gitconfig         "$HOME/.gitconfig"
+link mac/karabiner          "$HOME/.config/karabiner"
+link zsh/.zshrc             "$HOME/.zshrc"
+link starship/starship.toml "$HOME/.config/starship.toml"
+link ghostty/config         "$HOME/.config/ghostty/config"

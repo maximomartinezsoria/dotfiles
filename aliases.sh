@@ -1,6 +1,12 @@
 # Allow other aliases to be executed as sudo
 alias sudo="sudo "
 
+# Modern CLI replacements
+alias ls='eza --icons --group-directories-first'
+alias ll='eza -lah --icons'
+alias cat='bat'
+alias cd='z'
+
 alias la="ls -la"
 alias ~="cd ~"
 alias ..="cd .."

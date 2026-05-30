@@ -1,11 +1,8 @@
 # Dotfiles
-Dotfiles designed for performance. With these settings, the shell loads in 50ms.
-
-## Disclaimer
-These are my personal configurations. If you want to give them a try, I encourage you to first read and modify things to match your needs.
-*Important:* This files only work on macOS.
 
 ## Install
 ```bash
-sh ./bootstrap.sh
+git clone git@github.com:maximomartinezsoria/dotfiles.git ~/Code/dotfiles
+bash ~/Code/dotfiles/bootstrap.sh
 ```
+Then open `nvim` once so lazy.nvim and Mason finish installing plugins/LSP servers.

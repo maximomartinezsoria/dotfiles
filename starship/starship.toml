@@ -1,0 +1,53 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# ── Vesper ────────────────────────────────────────────────────
+# Minimal prompt. Near-monochrome with a warm peach accent.
+
+add_newline = true
+palette = "vesper"
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$cmd_duration\
+$line_break\
+$character"""
+
+[palettes.vesper]
+peach = "#ffc799"
+gray  = "#a0a0a0"
+coral = "#ff8080"
+mint  = "#99ffe4"
+white = "#ffffff"
+muted = "#646464"
+red   = "#ff8080"
+
+[directory]
+style = "bold peach"
+truncation_length = 3
+truncate_to_repo = false
+read_only = " 󰌾"
+read_only_style = "red"
+format = "[$path]($style)[$read_only]($read_only_style) "
+
+[git_branch]
+symbol = ""
+style = "bold gray"
+format = "[$branch]($style) "
+
+# Only indicate untracked files — nothing else
+[git_status]
+style = "bold coral"
+format = "([$untracked]($style) )"
+untracked = "●"
+
+[cmd_duration]
+min_time = 2000
+style = "muted"
+format = "took [$duration]($style) "
+
+[character]
+success_symbol = "[❯](bold peach)"
+error_symbol = "[❯](bold red)"
+vimcmd_symbol = "[❮](bold gray)"
