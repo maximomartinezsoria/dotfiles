@@ -4,8 +4,8 @@
 font-family = DankMono Nerd Font Mono
 font-size = 15
 
-macos-titlebar-style = hidden
-window-save-state = always
+window-save-state = never
+working-directory = ~/Code
 
 # ── Core colors ───────────────────────────────────────────────
 background = #101010
