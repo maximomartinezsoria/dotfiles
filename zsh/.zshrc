@@ -19,3 +19,11 @@ source "$DOTFILES/aliases.sh"
 bindkey '^r' atuin-search
 
 export PATH="$HOME/.local/bin:$PATH"
+
+
+# Herd injected PHP 8.4 configuration.
+export HERD_PHP_84_INI_SCAN_DIR="/Users/maximomartinezsoria/Library/Application Support/Herd/config/php/84/"
+
+
+# Herd injected PHP binary.
+export PATH="/Users/maximomartinezsoria/Library/Application Support/Herd/bin/":$PATH

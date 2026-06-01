@@ -11,6 +11,17 @@ fi
 # 2. Packages (CLI tools + VSCode extensions) from the Brewfile
 brew bundle --file="$DOTFILES_PATH/Brewfile"
 
+# 2b. MariaDB — start the service and allow passwordless `root` login (local dev only)
+if brew list mariadb &> /dev/null; then
+  brew services start mariadb
+  # wait for the server to accept connections (socket auth as the current OS user)
+  for _ in $(seq 1 30); do
+    mariadb -e "SELECT 1" &> /dev/null && break
+    sleep 1
+  done
+  mariadb -e "ALTER USER 'root'@'localhost' IDENTIFIED VIA mysql_native_password USING ''; FLUSH PRIVILEGES;"
+fi
+
 # 3. Language runtimes — Neovim's LSP servers/formatters (vtsls, eslint, prettier…) need Node
 mise use -g node@lts python@latest
 corepack enable 2>/dev/null || true
