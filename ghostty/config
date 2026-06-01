@@ -15,6 +15,10 @@ cursor-text = #101010
 selection-background = #2a2a2a
 selection-foreground = #ffffff
 
+# ── Splits ────────────────────────────────────────────────────
+split-divider-color = #ffc799
+unfocused-split-opacity = 0.9
+
 # ── ANSI palette (Vesper: warm peach / mint, near-monochrome) ──
 palette = 0=#282828
 palette = 1=#ff8080
