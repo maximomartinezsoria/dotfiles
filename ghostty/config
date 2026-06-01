@@ -16,8 +16,11 @@ selection-background = #2a2a2a
 selection-foreground = #ffffff
 
 # ── Splits ────────────────────────────────────────────────────
-split-divider-color = #ffc799
+split-divider-color = #4a3a2e
 unfocused-split-opacity = 0.9
+
+# ── Keybinds ──────────────────────────────────────────────────
+keybind = cmd+r=clear_screen
 
 # ── ANSI palette (Vesper: warm peach / mint, near-monochrome) ──
 palette = 0=#282828
